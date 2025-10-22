@@ -1,0 +1,17 @@
+# Display the python version
+python --version
+
+
+### Loding the 2024 nyc taxi data from the API
+import requests
+import pandas as pd
+
+url = "https://data.cityofnewyork.us/resource/gkne-dk5s.json?$limit=50000"
+response = requests.get(url)
+data = pd.DataFrame(response.json())
+
+data.to_csv("/path/to/data/nyc_taxi/raw_taxi_data.csv", index=False)
+print("Data extracted successfully.")
+
+
+
