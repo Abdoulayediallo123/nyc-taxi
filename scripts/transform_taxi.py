@@ -12,9 +12,9 @@ print(f"Loaded {len(df)} rows from {csv_file}")
 # 2. Define Azure SQL connection
 # =============================
 server = "hospitalserver.database.windows.net"
-database = "TaxiDB"
-username = "server_admin"
-password = "Diallo12"
+database = "your_data_name"
+username = "your_server_user_name"
+password = "your_password"
 
 # Replace spaces or special characters in driver with '+'
 driver = "ODBC Driver 18 for SQL Server"
